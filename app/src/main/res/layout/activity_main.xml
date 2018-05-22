@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/place"
+        android:layout_width="304dp"
+        android:layout_height="67dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/dateTime"
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="102dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="193dp"
+        android:layout_height="122dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/icon"
+        android:layout_marginEnd="15dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="50dp"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/sunset"
+        android:layout_width="131dp"
+        android:layout_height="64dp"
+        android:layout_alignEnd="@+id/place"
+        android:layout_alignTop="@+id/sunrise"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="20dp"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/sunrise"
+        android:layout_width="131dp"
+        android:layout_height="63dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/place"
+        android:layout_marginBottom="239dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="20dp"
+        tools:ignore="RtlCompat" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="111dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/place"
+        android:layout_marginTop="171dp"
+        app:srcCompat="@android:color/background_light"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/humidity"
+        android:layout_width="190dp"
+        android:layout_height="41dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="166dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/pressure"
+        android:layout_width="310dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="96dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="229dp"
+        android:layout_height="32dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="25dp" />
+
+    <ImageButton
+        android:id="@+id/refresh"
+        android:layout_width="39dp"
+        android:layout_height="38dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="33dp"
+        android:layout_toEndOf="@+id/place"
+        app:srcCompat="@drawable/refresh"
+        android:layout_toRightOf="@+id/place" />
+
+</RelativeLayout>
